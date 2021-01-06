@@ -100,11 +100,16 @@ header {
   padding: var(--padding);
 }
 
+/*
+  @ga0
+  in middle-left, right, right1,2,3
+  add padding: 10px
+*/
 .middle-left {
   background-color: cyan;
   width: 65%;
-
   bottom: 50%;
+  padding: 10px;
 }
 
 .middle-right {
@@ -112,23 +117,40 @@ header {
   flex-direction: column;
   width: 33%;
   margin-left: 20px;
+  padding: 10px;
 }
 
 .middle-right1 {
   background-color: darkgray;
   height: 30%;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .middle-right2 {
   background-color: darkorange;
   height: 30%;
   margin-bottom: 20px;
+  padding: 10px;
 }
 .middle-right3 {
   background-color: deepskyblue;
   height: 35%;
+  padding: 10px;
 }
+
+/*
+  @ga0
+  add +(MORE) button style
+*/
+#title {
+  float: let;
+}
+
+#more {
+  float: right; 
+}
+
 /* .mid {
   margin-top: 20 px;
   left: 200px;

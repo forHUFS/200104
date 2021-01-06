@@ -1,0 +1,194 @@
+:root {
+  /* 글자크기 */
+  --font-large: 24px;
+  --font-medium: 20px;
+  --font-small: 18px;
+  --font-micro: 15px;
+  --font-smallest: 10 px;
+
+  /* 사이즈 */
+  --logo-size: 75px;
+  --padding: 12px;
+
+  /* 색 */
+  --white-color: #ffffff;
+  --black-color: #0a0a0a;
+  --blue-color: #1b199e;
+  --red-color: #f01221;
+  --gray-darker-color: #433b3b;
+  --hufs-color: #0c153f;
+}
+@font-face {
+  src: url("font/한국외대체L.ttf");
+  font-family: "hufs_light";
+}
+@font-face {
+  src: url("font/한국외대체B.ttf");
+  font-family: "hufs_bold";
+}
+@font-face {
+  src: url("font/한국외대체M.ttf");
+  font-family: "hufs_medium";
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0 100px;
+  font-family: "hufs_medium";
+}
+
+header {
+  display: flex;
+
+  margin-left: 150px;
+  margin-right: 100px;
+  margin-top: 10px;
+  background-color: cornsilk;
+  height: 65px;
+}
+
+.logo {
+  display: flex;
+  color: rgb(36, 160, 118);
+  align-items: center;
+  font-size: var(--font-small);
+}
+.logo img {
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+.logo p {
+  color: var(--hufs-color);
+  font-size: var(--font-micro);
+}
+
+.menu_bar {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu_bar button {
+  font-size: var(--font-small);
+}
+
+.login {
+  display: flex;
+  width: 30%;
+  font-size: var(--font-smallest);
+  justify-content: flex-end;
+  margin-left: 20px;
+  list-style: none;
+}
+.login li {
+  margin-right: 20px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mid {
+  display: flex;
+  height: 80%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: var(--padding);
+}
+
+.middle-left {
+  background-color: cyan;
+  width: 65%;
+
+  bottom: 50%;
+}
+
+.middle-right {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-left: 20px;
+}
+
+.middle-right1 {
+  background-color: darkgray;
+  height: 30%;
+  margin-bottom: 20px;
+}
+
+.middle-right2 {
+  background-color: darkorange;
+  height: 30%;
+  margin-bottom: 20px;
+}
+.middle-right3 {
+  background-color: deepskyblue;
+  height: 35%;
+}
+#title {
+  float: let;
+}
+
+#more {
+  float: right;
+}
+
+footer {
+  background-color: var(--gray-darker-color);
+  margin-top: auto;
+  height: 110px;
+}
+.slidebanner {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidebanner .hufs_link {
+  /* display: flex; */
+  position: absolute;
+}
+footer .hufs_link li {
+  list-style: none;
+  display: flex;
+  float: left;
+  margin-left: 20px;
+}
+/* slidebanner는 같음 bannerbox =hufs_link  */
+.slidebanner li:first-child {
+  margin: 0;
+}
+
+footer .hufs_link li img {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  border-radius: 50%;
+}
+
+.hufs_link .info {
+  font-size: var(--font-smallest);
+  width: 120px;
+  height: 80px;
+  position: relative;
+}
+.hufs_link .info .info2 {
+  font-size: 8px;
+}
