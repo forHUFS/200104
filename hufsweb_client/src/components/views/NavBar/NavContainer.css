@@ -1,0 +1,62 @@
+.menuContainer {
+    display: block;
+    width: 100%;   
+}
+
+.menuBox {
+    padding-top:4px;
+    padding-bottom:4px;
+    width:986px;display:table;
+    height:231px;
+    table-layout:fixed;
+    background-color: rgb(174, 207, 199);
+    margin: 0 auto;
+}
+
+dl {
+    display: block;
+    margin: 0;
+}
+
+dd {
+    /* background-color:rgba(255,255,255,0.8); */
+    border-radius:2px;
+    border:1px solid #e9ecef;
+    background-color: dimgrey;
+    display: block;
+    margin-inline-start: 40px;
+    overflow: hidden;
+    border-top: 0px;
+    margin: 0;
+    list-style: none;
+}
+
+
+ul {
+    float: left;  /*가로 정렬 */
+    border-right: 1px solid #e6e9e9;
+    display: inline-grid;  
+    list-style: none;        /* 리스트 점 제거 */
+    padding: 0px 10px 0px 10px;
+    width: 100px;
+}
+
+li {
+    padding-left: 8px;
+    height: 25px;
+}
+
+.lastTab {
+    border-right: 0px
+}
+
+.rightBar {
+    position: absolute;
+    width: 120px;
+    top: 55px;
+    margin-left: 503px;
+    left: 50%;
+    display: block;
+    background-color: beige;
+    list-style: none;
+}
