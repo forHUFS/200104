@@ -1,8 +1,10 @@
 import React from "react";
 import "./NavContainer.css";
 
+// 중앙 메뉴 박스, 우측 탭
+
 function NavContainer() {
-  return (
+  return ( 
     <>
       <div className="menuContainer">
         <div className="menuBox">
