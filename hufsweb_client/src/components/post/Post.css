@@ -1,0 +1,16 @@
+.pageContainer {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 200px;
+  }
+  
+.pageList {
+    display: inline-block;
+  }
+.previousBtn {
+  display: inline-block;
+}
+.nextBtn {
+  display: inline-block;
+}

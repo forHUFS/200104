@@ -8,8 +8,7 @@ function RegisterPage(props) {
   const [ConfirmPassword, setConfirmPassword] = useState("");
   const [Email, setEmail] = useState("");
 
-  const [IdRegex, setIdRegex] = useState(true);
-  const [PasswordMatched, setPasswordMatched] = useState(false);
+  const [PasswordMatched, setPasswordMatched] = useState(true);
 
   // handler 만들기
   const onIdHandler = (event) => {
@@ -21,7 +20,10 @@ function RegisterPage(props) {
   };
   const onConfirmPasswordHandler = (event) => {
     setConfirmPassword(event.currentTarget.value);
+    
   };
+  
+
   const onEmailHandler = (event) => {
     setEmail(event.currentTarget.value);
   };
@@ -32,8 +34,6 @@ function RegisterPage(props) {
     if (Password !== ConfirmPassword) {
       setPasswordMatched(false);
       return alert("비밀번호 재확인");
-    } else {
-      setPasswordMatched(true);
     }
 
     let body = {
@@ -85,6 +85,7 @@ function RegisterPage(props) {
               value={ConfirmPassword}
               onChange={onConfirmPasswordHandler}
             />
+            
           </div>
 
           <div>
