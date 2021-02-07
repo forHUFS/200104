@@ -6,7 +6,6 @@ import "./NavContainer.css";
 function NavContainer() {
   return ( 
     <>
-      <div className="menuContainer">
         <div className="menuBox">
           <dl>
             <dd>
@@ -101,7 +100,6 @@ function NavContainer() {
             </dd>
           </dl>
         </div>
-      </div>
       <div className="rightBar">
         오른쪽 탭<li>1</li>
         <li>1</li>

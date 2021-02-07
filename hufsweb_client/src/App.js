@@ -6,6 +6,7 @@ import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage'
 import RegisterPage from './components/views/RegisterPage/RegisterPage'
 import Post from './components/post/Post'
+import PostView from './components/post/PostView'
 
 
 
@@ -14,7 +15,8 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/post" component={Post} />
+        <Route exact path="/post/:no" component={PostView} />
+          <Route exact path="/post/" component={Post} />
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/register" component={RegisterPage} />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom"
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { List } from "./List";
@@ -23,7 +24,9 @@ function Post() {
         return (
           <tbody key={index}>
             <td> {e.no} </td>
-            <td> </td>
+            <td> 
+            <Link to={`/post/${e.no}`}>{e.content}</Link>
+            </td>
             <td> {e.content} </td>
             <tr />
           </tbody>

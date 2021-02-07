@@ -1,8 +1,8 @@
 import React from "react";
-import "./LandingPage.css";
 import NavBar from "../NavBar/NavBar"
 import NavContainer from "../NavBar/NavContainer"
 import Center from "./Center"
+import Footer from "../Footer/Footer"
 function LandingPage() {
   return (
     <div>
@@ -10,6 +10,7 @@ function LandingPage() {
          <NavBar /> 
          <NavContainer />
          <Center />
+         <Footer />
       </div>
     </div>
   );
